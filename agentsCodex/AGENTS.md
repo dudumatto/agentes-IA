@@ -1,4 +1,3 @@
-
 # AGENTS.md
 
 ## 🎯 Objetivo
@@ -383,5 +382,104 @@ Possíveis problemas restantes
 4. Garantir segurança
 5. Melhorar performance
 6. Refatorar com segurança
+
+---
+
+Sempre resumir memórias de forma curta e objetiva.
+Evitar duplicação.
+Salvar apenas conhecimento útil.
+
+---
+
+---
+
+# 🧠 Sistema de Memória Obsidian
+
+Vault:
+E:/second-brain
+
+## Ao iniciar
+Antes de qualquer tarefa, ler:
+- E:/second-brain/AGENTS.md
+- E:/second-brain/02-projects/tcc/README.md
+- memórias relevantes em E:/second-brain/02-projects/tcc/
+
+## Durante o trabalho
+- Usar a memória como contexto.
+- Evitar repetir análises antigas.
+- Consultar memórias antes de grandes alterações.
+
+## Ao finalizar
+Sempre gerar uma memória curta em markdown e salvar em:
+
+E:/second-brain/02-projects/tcc/
+
+Formato:
+
+# Título
+
+## O que foi feito
+-
+
+## Arquivos analisados/alterados
+-
+
+## Decisões importantes
+-
+
+## Próximos passos
+-
+
+## Tags
+#tcc #memoria
+
+## SKILLS
+
+- [[token-efficiency]]
+- [[react-best-practices]]
+- [[code-review]]
+
+## 🧠 Uso de Skills
+
+### Diretriz Geral
+Sempre analisar o contexto da tarefa e:
+
+- Identificar quais skills são relevantes
+- Aplicar automaticamente as skills adequadas
+- Combinar múltiplas skills quando necessário
+- Priorizar qualidade, clareza e eficiência
+
+---
+
+### Regras
+
+- Não ignorar skills disponíveis
+- Não aplicar skills sem contexto (evitar uso forçado)
+- Preferir precisão ao invés de quantidade
+- Manter consistência com decisões anteriores do projeto
+
+---
+
+### Mapeamento de uso
+
+- Frontend / UI / React  
+  → [[react-best-practices]]
+
+- Otimização / prompts / eficiência  
+  → [[token-efficiency]]
+
+- Revisão / melhoria de código / análise  
+  → [[code-review]]
+
+---
+
+### Comportamento esperado
+
+Antes de executar qualquer tarefa:
+
+1. Avaliar o tipo de problema
+2. Selecionar mentalmente as skills relevantes
+3. Aplicar as regras das skills durante toda a execução
+4. Se necessário, justificar decisões com base nas skills
 
 ---

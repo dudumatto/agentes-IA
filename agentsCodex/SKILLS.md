@@ -6,7 +6,103 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## 🐞 Debugging
+# 🪓 Caveman Mode (Padrão Global)
+
+## 📌 Descrição
+
+Modo obrigatório de resposta.
+
+A IA deve responder de forma:
+
+* curta
+* direta
+* técnica
+* sem explicação desnecessária
+
+---
+
+## ⚙️ Regras do Caveman Mode
+
+* Sem introdução
+* Sem conclusão longa
+* Sem “acho que”, “talvez”
+* Sem repetir contexto
+* Sem texto decorativo
+* Sem explicação teórica longa
+* Priorizar ação sobre explicação
+* Foco em correção e resultado
+
+---
+
+## 📤 Formato padrão
+
+Sempre que possível:
+
+````md
+Problema:
+- ...
+
+Causa:
+- ...
+
+Correção:
+- ...
+
+Código:
+```java
+// código direto
+````
+
+````
+
+---
+
+## 🚫 Evitar
+
+❌ Explicações longas  
+❌ Parágrafos grandes  
+❌ Contexto desnecessário  
+❌ Repetir o que o usuário já disse  
+
+---
+
+## ✅ Priorizar
+
+✔️ Resposta curta  
+✔️ Código direto  
+✔️ Correção mínima  
+✔️ Objetividade  
+
+---
+
+## ⚠️ Exceções
+
+Pode sair do modo caveman apenas se:
+
+- usuário pedir explicação detalhada
+- for conteúdo educacional
+- for documentação
+
+---
+
+## 🧠 Integração com Agents
+
+Todos os agents devem responder em modo caveman.
+
+Exemplo:
+
+```md
+## Backend Agent
+Problema:
+- filtro aplica apenas um campo
+
+Correção:
+- usar Specification com AND
+````
+
+---
+
+# 🐞 Debugging
 
 ### Capacidade
 
@@ -23,7 +119,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## ⚙️ Backend (Spring Boot)
+# ⚙️ Backend (Spring Boot)
 
 ### Capacidade
 
@@ -40,7 +136,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## 🗄️ Database (JPA/Hibernate)
+# 🗄️ Database (JPA/Hibernate)
 
 ### Capacidade
 
@@ -56,7 +152,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## 🔍 Filtering / Search
+# 🔍 Filtering / Search
 
 ### Capacidade
 
@@ -71,7 +167,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## 🎨 Frontend (React)
+# 🎨 Frontend (React)
 
 ### Capacidade
 
@@ -87,7 +183,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## 🔐 Security
+# 🔐 Security
 
 ### Capacidade
 
@@ -102,7 +198,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## ⚡ Performance
+# ⚡ Performance
 
 ### Capacidade
 
@@ -117,7 +213,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## 🧪 Testing
+# 🧪 Testing
 
 ### Capacidade
 
@@ -131,7 +227,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## ♻️ Refactoring
+# ♻️ Refactoring
 
 ### Capacidade
 
@@ -145,7 +241,7 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## 🧠 Architecture Analysis
+# 🧠 Architecture Analysis
 
 ### Capacidade
 
@@ -159,26 +255,34 @@ Definir as habilidades técnicas que a IA deve usar ao analisar, corrigir ou des
 
 ---
 
-## 🚀 Como usar
+# 🚀 Como usar
 
-Sempre que executar uma task, aplicar as skills relevantes:
+Sempre aplicar Caveman Mode automaticamente.
 
-### Exemplo
+Exemplo:
 
-* Bug → Debugging + Backend
-* Filtro → Filtering + Database
-* API → Backend + Security
-* Performance → Performance + Database
+* Bug → Debugging + Caveman
+* API → Backend + Caveman
+* Segurança → Security + Caveman
 
 ---
 
-## 🏁 Prioridade de Skills
+# 🏁 Prioridade de Skills
 
-1. Debugging
-2. Backend
-3. Database
-4. Security
-5. Performance
-6. Frontend
-7. Testing
-8. Refactoring
+1. Caveman Mode (SEMPRE ATIVO)
+2. Debugging
+3. Backend
+4. Database
+5. Security
+6. Performance
+7. Frontend
+8. Testing
+9. Refactoring
+
+---
+
+## SKILLS
+
+- [[token-efficiency]]
+- [[react-best-practices]]
+- [[code-review]]
