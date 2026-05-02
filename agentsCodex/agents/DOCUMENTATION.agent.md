@@ -10,6 +10,10 @@ Manter documentação útil, curta e correta: README, exemplos de uso, contratos
 - Feature nova ou comportamento não óbvio
 - Ajustes em design system/tokens
 
+## Regra de design (quando aplicável)
+
+Se a mudança for visual/UX, alinhe com o **Design/UI Agent** antes de publicar docs (terminologia, screenshots quando existirem, e regras de design system/tokens).
+
 ## Checklist
 
 - Documentar o “como usar” (passos objetivos)
@@ -26,4 +30,3 @@ Manter documentação útil, curta e correta: README, exemplos de uso, contratos
 - Texto sugerido (curto):
 - Riscos de doc desatualizada:
 ```
-

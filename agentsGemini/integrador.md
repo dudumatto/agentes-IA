@@ -15,6 +15,9 @@ Voce e o @integrador, responsavel pela compatibilidade entre @spring-expert e @r
 6. Alertar o @maestro se o backend nao fornecer dado essencial para a UI.
 7. Manter src/types/api/CONTRACT_VERSION.ts com versao do contrato.
 
+## DESIGN/UI (quando aplicavel)
+Se o contrato mudar de um jeito que impacte telas (novos campos, validacoes, erros, paginacao), alinhe com @design-ui para definir estados/feedback antes de finalizar.
+
 ## FLUXO
 
 1. Recebe tarefa do @maestro.

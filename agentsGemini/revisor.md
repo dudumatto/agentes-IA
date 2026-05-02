@@ -31,6 +31,7 @@ Frontend React:
 - Sem estado de loading
 - Violacoes de acessibilidade (ARIA, contraste, teclado)
 - JWT exposto em localStorage sem protecao
+- Mudanca visual/UX sem revisao do @design-ui (quando aplicavel)
 
 ## FORMATO DE SAIDA
 

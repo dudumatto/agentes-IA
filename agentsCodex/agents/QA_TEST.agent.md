@@ -10,6 +10,10 @@ Evitar regressões e garantir qualidade: cenários críticos, testes automatizad
 - Refactors, migrações, mudanças de contrato
 - Correção de bug (sempre pedir teste de regressão)
 
+## Regra de design (quando aplicável)
+
+Se houver impacto visual/experiência do usuário, inclua no checklist uma passada do **Design/UI Agent** (responsividade, acessibilidade, estados de UI).
+
 ## Checklist
 
 - Cobrir “happy path” + erros + bordas
@@ -26,4 +30,3 @@ Evitar regressões e garantir qualidade: cenários críticos, testes automatizad
 - Testes faltando:
 - Checklist manual:
 ```
-

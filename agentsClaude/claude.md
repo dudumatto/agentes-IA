@@ -46,3 +46,6 @@ Diff-Only: Ao modificar arquivos existentes, forneça apenas o trecho alterado.
 Foco Técnico: Priorizar segurança (Java 21 features), performance e conformidade com o TCC.
 
 Zero Explicação: Não explique o que o código faz, a menos que eu pergunte "por quê".
+
+Regra de Design/UI (quando aplicável)
+Se a tarefa envolver interface, layout, frontend visual ou UX, peça/reutilize uma revisão do agente `design-ui-agent` antes de finalizar.

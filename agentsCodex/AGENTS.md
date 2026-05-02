@@ -19,6 +19,7 @@ Organizar o trabalho em **especialistas** (agentes) com checklists curtos e saí
 - Preferir mudanças pequenas e compatíveis.
 - Se houver dúvida, declarar explicitamente.
 - Segurança e compatibilidade têm prioridade sobre estética/performance.
+- Se houver impacto visual/UX, o **Design/UI Agent** revisa antes de concluir.
 
 ## Fluxo padrão
 

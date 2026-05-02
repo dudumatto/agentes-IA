@@ -24,7 +24,7 @@ Workflow oficial: `rules/COLLABORATION.md`.
 1. Segurança
 2. Correção funcional
 3. Compatibilidade/contratos
-4. UX (Design/UI)
+4. UX (Design/UI) — quando houver impacto visual, revisar antes de concluir
 5. Performance
 6. Organização/refino
 

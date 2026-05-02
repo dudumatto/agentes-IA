@@ -24,10 +24,28 @@ Use esta tabela como gatilho:
 4. Implementar mudanças (mínimas, seguras, compatíveis).
 5. Validar: testes/linters/build + checklist manual do QA/Design.
 
+## Regra “Design antes de concluir”
+
+Se houver qualquer impacto em **UI/UX/visual/layout/responsividade/acessibilidade**, o **Design/UI Agent** deve:
+
+- revisar decisões visuais (tokens, spacing, tipografia, hierarquia, estados)
+- apontar mudanças mínimas e riscos de regressão visual
+- deixar um checklist de validação (incluindo mobile/teclado)
+
+Backend/Security/QA/Docs só acionam design quando houver impacto visual/experiência do usuário.
+
+## Como simular “paralelo” (sem ferramentas)
+
+Quando a tarefa envolver múltiplas áreas:
+
+1. Escolher o agente “dono” (ex: Frontend ou Backend).
+2. Rodar análises curtas dos demais **antes** de codar (evita retrabalho).
+3. Se o trabalho for visual, faça um micro-ciclo:
+   - Design/UI define decisões e checklist → Frontend implementa → Design/UI valida → QA valida.
+
 ## Resolução de conflitos
 
 Se agentes “discordarem”:
 
 - Priorizar **segurança** > **correção** > **compatibilidade** > **UX** > **performance** > **estética**.
 - Registrar a decisão (curta) e a alternativa descartada.
-

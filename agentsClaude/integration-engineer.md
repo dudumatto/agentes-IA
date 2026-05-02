@@ -86,6 +86,9 @@ Build
 [ ] ./mvnw package passes without errors
 [ ] Application runs with both processes together
 
+UI/UX (when applicable)
+[ ] Any contract change that impacts screens was reviewed by @design-ui-agent (errors, empty states, forms, table/list behavior)
+
 ## Workflow
 1. Read backend-specialist code (controllers, DTOs) and frontend-specialist code (services, hooks)
 2. Compare contracts - identify divergences

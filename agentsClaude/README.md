@@ -5,6 +5,7 @@
 | Arquivo | Agente | Função |
 |---|---|---|
 | `maestro.md` | 🎼 Maestro | Orquestrador — planeja e delega |
+| `design-ui-agent.md` | 🎨 Design UI Agent | UI/UX — layout, responsividade, a11y, polimento |
 | `frontend-specialist.md` | ⚛️ Frontend Specialist | React, Vite, Tailwind CSS |
 | `backend-specialist.md` | ☕ Backend Specialist | Spring Boot, Java 21, JWT |
 | `integration-engineer.md` | 🔗 Integration Engineer | CORS, contratos, variáveis de ambiente |
@@ -35,6 +36,8 @@ cp *.md .claude/agents/
 Implemente um módulo de cadastro de produtos com CRUD completo
 ```
 O Maestro automaticamente decompõe a tarefa e delega aos agentes certos.
+
+Regra: se houver impacto em UI/UX (layout/visual/responsividade/a11y), o Maestro inclui uma revisão do `design-ui-agent` antes do `quality-reviewer`.
 
 ### Invocar um agente diretamente
 ```

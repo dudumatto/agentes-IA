@@ -50,6 +50,7 @@ Frontend:
 [ ] Components over 200 lines (decomposition candidates)
 [ ] Missing keys or using index as key in dynamic lists
 [ ] Hardcoded API URLs instead of import.meta.env.VITE_API_URL
+[ ] Visual/UX changes shipped without a design review when applicable (request @design-ui-agent output)
 
 Integration:
 [ ] CORS not configured for production environment

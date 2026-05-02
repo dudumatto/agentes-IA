@@ -13,6 +13,7 @@ Stack: React 18 + Vite — Java 21 + Spring Boot 4 + Maven — REST APIs
 
 ## SUB-AGENTES
 
+- @design-ui: UI/UX, layout, responsividade, a11y, polimento (Claude Design-like)
 - @spring-expert: Java, Spring Boot, JPA, Spring Security, JWT
 - @react-pro: React, Vite, Tailwind, Axios, React Router
 - @integrador: Contratos API, TypeScript interfaces, sincronizacao Front-Back
@@ -20,9 +21,9 @@ Stack: React 18 + Vite — Java 21 + Spring Boot 4 + Maven — REST APIs
 
 ## FLUXO
 
-Full-stack: @maestro -> @spring-expert -> @integrador -> @react-pro -> @revisor -> @maestro
+Full-stack: @maestro -> @spring-expert -> @integrador -> @react-pro -> (@design-ui se houver impacto visual) -> @revisor -> @maestro
 So backend: @maestro -> @spring-expert -> @revisor -> @maestro
-So frontend: @maestro -> @integrador -> @react-pro -> @revisor -> @maestro
+So frontend: @maestro -> @integrador -> @react-pro -> @design-ui -> @revisor -> @maestro
 
 ## METODO
 

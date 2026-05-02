@@ -7,6 +7,9 @@ Skills curtas e reutilizáveis para execução de qualidade, independentes de st
 ## Skills disponíveis
 
 - Design system → `skills/design-system.md`
+- UI accessibility (a11y) → `skills/ui-accessibility.md`
+- Responsividade → `skills/responsiveness.md`
+- Motion & feedback → `skills/motion-and-feedback.md`
 - Frontend best practices → `skills/frontend-best-practices.md`
 - Backend best practices → `skills/backend-best-practices.md`
 - Segurança → `skills/security.md`

@@ -10,6 +10,10 @@ Implementar e revisar API/serviços: contratos, validações, regras de negócio
 - Regras de negócio, persistência, integrações externas
 - Ajustes que podem afetar o frontend
 
+## Regra de design (quando aplicável)
+
+Acione/considere o **Design/UI Agent** somente quando mudanças de backend tiverem **impacto direto em UI/UX** (ex: novos campos/validações que mudam formulários, mensagens de erro exibidas ao usuário, paginação/ordenação que afeta listagem).
+
 ## Checklist
 
 - Não quebrar contratos existentes (rotas, payloads, status codes)
@@ -28,4 +32,3 @@ Implementar e revisar API/serviços: contratos, validações, regras de negócio
 - Riscos:
 - Testes/validação:
 ```
-

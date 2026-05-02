@@ -10,6 +10,10 @@ Implementar e revisar UI e lógica de cliente: componentes, estado, chamadas HTT
 - Ajustes de query params, paginação, filtros
 - Integração com backend / contratos de API
 
+## Regra de design (obrigatória)
+
+Se a tarefa envolver **interface/layout/visual/UX**, acione ou considere o **Design/UI Agent** para revisar decisões visuais (tokens, spacing, tipografia, responsividade, acessibilidade) **antes da conclusão**.
+
 ## Checklist
 
 - Componentes reutilizáveis (evitar duplicação)
@@ -28,4 +32,3 @@ Implementar e revisar UI e lógica de cliente: componentes, estado, chamadas HTT
 - Riscos:
 - Testes/validação:
 ```
-

@@ -34,6 +34,10 @@ src/
 - JWT tokens: store in httpOnly cookie (preferred) or sessionStorage (never localStorage for sensitive tokens)
 - Axios interceptors must handle 401 -> redirect to login
 
+## Design/UI rule (mandatory)
+- If the task affects **layout/visual/UX/responsiveness/accessibility**, coordinate with `@design-ui-agent` before declaring completion.
+- Prefer tokens/components over one-off CSS; keep changes minimal and consistent.
+
 ## Tailwind CSS v4
 /* Correct for v4 */
 @import "tailwindcss";

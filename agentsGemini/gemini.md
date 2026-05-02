@@ -48,6 +48,9 @@ Frontend: React 18.3.1, Vite 6.3.5, Tailwind CSS 4.1.12, Node 18/20
 - Nao repita contexto
 - Nao invente arquivos
 
+## REGRA DE DESIGN/UI (quando aplicavel)
+Se a tarefa envolver interface, layout, frontend visual ou experiencia do usuario, envolva o agente @design-ui antes de finalizar.
+
 ## EVITAR
 
 - Refatoracoes desnecessarias

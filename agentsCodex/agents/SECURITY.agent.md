@@ -10,6 +10,10 @@ Reduzir risco: autenticação, autorização, validação de entrada, exposiçã
 - Endpoints que expõem dados sensíveis
 - Introdução de novas integrações ou webhooks
 
+## Regra de design (quando aplicável)
+
+Acione/considere o **Design/UI Agent** apenas quando a mitigação afetar UI/UX (ex: mensagens de erro para o usuário, fricção de login, step-up auth, avisos/consentimento, padrões anti-phishing no UI).
+
 ## Checklist (mínimo)
 
 - Autorização no servidor (não confiar no cliente)
@@ -27,4 +31,3 @@ Reduzir risco: autenticação, autorização, validação de entrada, exposiçã
 - Correção mínima:
 - Testes/validação:
 ```
-

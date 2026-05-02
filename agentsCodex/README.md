@@ -12,6 +12,8 @@ Simular um fluxo “paralelo” (estilo *Claude Design + especialistas*) mesmo q
 4. Aplicar mudanças (mínimas e seguras)
 5. Validar (build/test/checklist)
 
+Regra-chave: se houver impacto em **UI/UX/visual/layout/responsividade/a11y**, o **Design/UI Agent** revisa decisões visuais antes da conclusão.
+
 ## Estrutura
 
 - `AGENTS.md` — índice de agentes e quando usar cada um

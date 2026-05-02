@@ -49,6 +49,9 @@ public record UserResponse(
 - Always validate requests with @Valid + Bean Validation
 - Always handle exceptions with global @ControllerAdvice
 
+## Design/UI rule (when applicable)
+If backend changes affect user-facing UX (validation messages, new required fields, pagination/search behavior that changes screens), flag it to Maestro and request a quick `@design-ui-agent` review.
+
 ### JWT with JJWT 0.12.6
 // Generation (v0.12.x API)
 String token = Jwts.builder()
