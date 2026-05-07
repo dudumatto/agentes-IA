@@ -1,70 +1,131 @@
 # reorganization-report
 
-Data: 2026-05-06
+Data: 2026-05-07
 
 ## Objetivo
 
-Deixar o repositório pronto para uso global: modular, token-efficient, sem duplicação e com nomes padronizados (kebab-case).
+Transformar a arquitetura em um AI Operating System modular para Codex, Claude e Gemini, otimizado para multi-agentes, token efficiency, context engineering, routing semantico e memoria persistente.
 
-## Antes (resumo)
+## Estrutura antes
 
-Top-level:
-- `.codex/` (estrutura própria, mas com agentes `*.agent.md` e skills em subpastas `*/SKILL.md`)
-- `agentsCodex/`, `agentsClaude/`, `agentsGemini/` (kits legados com conteúdo sobreposto)
-- `MEMORIA_GUIA.md` e `ROTINA_IA.md` (docs globais fora de `.codex/`)
-- `contextTCC/` (contexto específico de exemplo)
+- `.codex/` com agentes, skills, rules, workflows, templates e docs.
+- `agentsCodex/`, `agentsClaude/`, `agentsGemini/` como kits legados com bastante overlap.
+- `contextTCC/PROJECT_CONTEXT.md` como contexto especifico e grande.
+- Docs raiz (`ROTINA_IA.md`, `MEMORIA_GUIA.md`) ja convertidas em ponteiros.
 
-Problemas:
-- nomes inconsistentes (`*.agent.md`, skills em subpastas) vs padrão desejado
-- repetição de regras/checklists entre kits
-- docs globais espalhadas fora de `.codex/`
+Hotspots:
+- `contextTCC/PROJECT_CONTEXT.md` e kits legados sao os maiores custos de token.
+- Overlap recorrente entre frontend/design/security/review/test.
+- Faltavam `routing/` e `memory/` como camadas explicitas.
 
-## Depois (estrutura final)
+## Estrutura depois
 
 `.codex/`
-- `AGENTS.md` / `RULES.md` / `SKILLS.md` (índices leves)
-- `agents/` (agentes padronizados)
-- `skills/` (skills padronizadas)
-- `rules/` (rules padronizadas)
-- `workflows/` (processos passo a passo)
-- `templates/` (formatos reutilizáveis)
-- `docs/` (documentação explicativa)
+- `AGENTS.md`, `RULES.md`, `SKILLS.md` como indices leves.
+- `agents/` com agentes especializados.
+- `skills/` com micro-skills.
+- `rules/` com regras curtas e obrigatorias.
+- `workflows/` com passos operacionais.
+- `routing/` com dispatch semantico.
+- `memory/` com camadas de memoria elastica.
+- `templates/` com formatos reutilizaveis.
+- `docs/` com guias de arquitetura, routing, contexto, tokens e memoria.
 
-## Renomeados / convertidos
+## Agentes criados
 
-Agentes (de `*.agent.md` → `*.md`):
-- `.codex/agents/*-agent.agent.md` → `.codex/agents/*-agent.md`
+- `auth-security-agent.md`
+- `upload-security-agent.md`
+- `performance-agent.md`
+- `refactor-agent.md`
+- `debug-agent.md`
+- `research-agent.md`
+- `planning-agent.md`
 
-Skills (de `.../SKILL.md` → `skills/*.md`):
-- `.codex/skills/**/SKILL.md` → `.codex/skills/*.md` (lista padronizada)
+## Agentes ajustados
 
-Rules (novas, padronizadas):
-- criado conjunto em `.codex/rules/*.md` (curtas e obrigatórias)
+- `security-agent.md` virou triagem AppSec geral e delega auth/upload.
+- `review-agent.md` ficou focado em auditoria final independente.
 
-Workflows/Templates (padronizados):
-- `.codex/workflows/*.md` e `.codex/templates/*.md`
+## Micro-skills criadas
 
-Docs (centralizados):
-- criado `.codex/docs/*` e `MEMORIA_GUIA.md` / `ROTINA_IA.md` viraram ponteiros
+- React: `react-components.md`, `react-hooks.md`, `react-performance.md`, `react-state-management.md`
+- Spring: `spring-controllers.md`, `spring-services.md`, `spring-data-jpa.md`
+- UI/animation: `accessibility.md`, `design-tokens.md`, `tailwind-layout.md`, `gsap-scrolltrigger.md`, `animation-performance.md`
+- Context/memory/routing: `context-compression.md`, `semantic-routing.md`, `memory-compression.md`
+- API/security: `api-contracts.md`, `jwt-security.md`
 
-## Duplicações removidas/evitadas
+## Skills removidas/mescladas
 
-- removidos índices antigos dentro de `.codex/agents/` e `README`s redundantes dentro de `.codex/`
-- removidas skills antigas em formato “pasta + SKILL.md”
-- removidas rules/workflows/templates antigos em nomes não padronizados
+- `react-best-practices.md` -> micro-skills React.
+- `spring-best-practices.md` -> micro-skills Spring.
+- `testing-workflows.md` -> workflows + testing rules.
 
-## Links e referências
+## Rules adicionadas
 
-- atualizado `README.md` para apontar para `.codex/docs/context-engineering.md`
-- verificado: sem referências para caminhos antigos de rules/workflows/templates removidos
+- `memory-rules.md`
+- `routing-rules.md`
+- `refactor-rules.md`
+- `context-rules.md`
 
-## Observações importantes
+## Workflows adicionados
 
-- `agentsCodex/`, `agentsClaude/`, `agentsGemini/` e `contextTCC/` foram preservados (compatibilidade).
-- Existem diretórios vazios legados dentro de `.codex/` (ex.: `.codex/automations/` e subpastas antigas de skills) que **não puderam ser removidos via shell** no sandbox atual por ACL/deny de delete; o conteúdo foi removido e não é mais referenciado.
+- `planning-workflow.md`
+- `refactor-workflow.md`
+- `debug-workflow.md`
 
-## Próximos ajustes recomendados
+## Routing
 
-1) (Opcional) mover kits legados para uma pasta `legacy/` e manter apenas ponteiros (se você quiser “repo ultra-limpo”).
-2) (Fora do repo) ajustar o loader do vault (`E:/second-brain/scripts/memory/...`) para suportar perfil “mínimo” (não imprimir `RULES.md` e `LEARNINGS.md` sempre).
+Criado `.codex/routing/`:
+- `semantic-dispatch.md`
+- `domain-map.md`
+- `skill-map.md`
+- `workflow-map.md`
+- `load-policy.md`
+- `parallel-dispatch.md`
 
+Melhoria:
+- task -> dominio -> owner -> especialistas -> micro-skills -> workflow.
+
+## Memoria
+
+Criado `.codex/memory/`:
+- `long-term-memory.md`
+- `project-memory.md`
+- `learnings.md`
+- `summaries.md`
+- `semantic-indexes.md`
+- `compression-policy.md`
+- `memory-graph.md`
+
+Melhoria:
+- memoria como indice + resumo + ponteiro, sem dump.
+- projeto fica fora da `.codex` global.
+
+## Docs atualizadas
+
+- `agent-architecture.md`
+- `routing-guide.md`
+- `context-engineering.md`
+- `token-guide.md`
+- `memoria-guia.md`
+- `rotina-ia.md`
+
+## Melhorias de token efficiency
+
+- indices leves no topo.
+- micro-skills carregadas sob demanda.
+- docs e memory fora do prompt base.
+- routing define camadas de load.
+- contexto especifico (`contextTCC/`) permanece fora da `.codex`.
+
+## Observacoes
+
+- `agentsCodex/`, `agentsClaude/` e `agentsGemini/` foram preservados como compatibilidade/legado.
+- Diretorios vazios antigos dentro de `.codex/skills/` e `.codex/automations/` foram removidos apos limpeza elevada.
+
+## Proximos upgrades recomendados
+
+1. Criar exporters para gerar variantes Claude/Gemini a partir da `.codex` canonica.
+2. Mover kits legados para `legacy/` quando nao precisar mais de compatibilidade top-level.
+3. Ajustar o loader do vault para `--profile minimal`.
+4. Criar script de validacao de links e routing.

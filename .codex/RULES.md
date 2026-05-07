@@ -11,6 +11,14 @@ Arquivos:
 - `rules/collaboration-rules.md`
 - `rules/performance-rules.md`
 - `rules/output-rules.md`
+- `rules/memory-rules.md`
+- `rules/routing-rules.md`
+- `rules/refactor-rules.md`
+- `rules/context-rules.md`
 
 Formato de entrega:
 - `templates/output-format.md`
+
+Carregamento:
+- `routing/load-policy.md`
+- `docs/routing-guide.md`

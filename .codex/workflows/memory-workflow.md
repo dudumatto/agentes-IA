@@ -6,7 +6,7 @@ Salvar memória quando houver:
 - padrão novo (design/arquitetura/testes)
 
 Passos:
-1) Extrair 3–7 bullets (o que muda e por quê).
-2) Salvar nota curta (template): `templates/memory-template.md`.
-3) Atualizar índice de memória (sem dump).
-
+1. Extrair 3-7 bullets (o que muda e por que).
+2. Salvar nota curta (template): `templates/memory-template.md`.
+3. Atualizar indice de memoria (sem dump).
+4. Comprimir memoria antiga quando passar de 2k tokens.

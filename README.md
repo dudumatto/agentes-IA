@@ -4,7 +4,7 @@ Este repositório organiza uma arquitetura de contexto **modular**, **escalável
 
 ## Estrutura
 
-- **Canônico (recomendado):** `.codex/` (agents/skills/rules/workflows/templates/automations)
+- **Canônico (recomendado):** `.codex/` (agents/skills/rules/workflows/templates/docs/memory/routing)
 - **Kits legados (preservados):**
   - `agentsCodex/` — Agent Kit genérico (agentes + skills + rules)
   - `agentsClaude/` — conjunto de agentes no formato do Claude
@@ -41,7 +41,8 @@ Backend/Security/QA/Docs só acionam design quando houver impacto visual/UX.
 
 ## Leitura rápida (recomendado)
 
-- Routing + paralelismo: `.codex/docs/context-engineering.md`
+- Routing + paralelismo: `.codex/docs/routing-guide.md`
+- Arquitetura de agentes: `.codex/docs/agent-architecture.md`
 - Rules curtas: `.codex/rules/`
 - Skills sob demanda: `.codex/skills/`
 - Workflows: `.codex/workflows/`

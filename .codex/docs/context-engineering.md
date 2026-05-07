@@ -1,20 +1,27 @@
 # context-engineering
 
-## Princípios
+## Principios
 
-- Contexto mínimo por padrão (progressive disclosure).
-- Modularidade: agentes/skills/rules/workflows/templates/docs separados.
-- Fonte canônica única (`.codex/`) para evitar drift entre “kits”.
+- Contexto minimo por padrao.
+- Progressive disclosure: indice -> routing -> agent -> rule -> micro-skill -> docs.
+- Context slicing: carregar apenas o dominio da task.
+- Context compression: resumo + ponteiro para detalhes.
+- Semantic layering: cada pasta tem uma funcao unica.
 
-## Roteamento (mínimo + paralelo)
+## Camadas de carregamento
 
-- Escolher 1 owner (frontend/backend/architecture).
-- Antes de codar (onda A): design/security/architecture (se aplicável).
-- Antes de concluir (onda B): testing + review.
+1. `.codex/AGENTS.md`, `.codex/RULES.md`, `.codex/SKILLS.md`
+2. `routing/semantic-dispatch.md`
+3. 1 owner agent
+4. rules do dominio
+5. micro-skills especificas
+6. workflow operacional
+7. memory/docs sob demanda
 
 ## Anti-patterns
 
-- carregar `RULES` e `LEARNINGS` inteiros sempre
-- duplicar stack/regras em múltiplos agentes
-- criar docs monolíticas (>2k tokens)
+- carregar `docs/` ou `memory/` inteiro por padrao
+- duplicar stack/regras em varios agentes
+- misturar workflow dentro de rules
+- salvar contexto especifico de projeto na `.codex` global
 

@@ -1,31 +1,24 @@
-# rotina-ia (global)
+# rotina-ia
 
-Objetivo: orientar a IA a trabalhar com **contexto mínimo**, **mudanças pequenas** e **memória bem curada**.
+Objetivo: trabalhar com contexto minimo, mudancas pequenas e memoria curada.
 
 ## Ao iniciar
 
-1) Ler apenas o necessário:
-- `.codex/AGENTS.md`, `.codex/RULES.md`, `.codex/SKILLS.md`
-- `PROJECT_CONTEXT.md` do projeto (quando existir)
-- `MEMORY.md` do projeto (quando existir)
-2) Evitar carregar dumps grandes sem necessidade.
+1. Ler indices: `.codex/AGENTS.md`, `.codex/RULES.md`, `.codex/SKILLS.md`.
+2. Rodar routing mental por `routing/semantic-dispatch.md`.
+3. Ler contexto de projeto somente quando a tarefa pedir.
+4. Evitar dumps grandes.
 
-## Durante a tarefa
+## Durante
 
 - Consultar arquivos reais antes de alterar.
-- Evitar suposições e repetição de contexto.
-- Reutilizar componentes/padrões já existentes.
-- Priorizar compatibilidade e segurança.
+- Escolher 1 owner e especialistas minimos.
+- Carregar micro-skills sob demanda.
+- Priorizar compatibilidade, seguranca e token efficiency.
 
 ## Ao finalizar
 
-Gerar:
-- resumo curto (o que mudou)
-- problema/causa/solução
-- arquivos alterados
-- validação executada
-- próximo passo (se houver)
-
-Memória:
-- salvar apenas decisões/buckets reutilizáveis (não conversa).
+- Resumir o que mudou.
+- Listar validacao.
+- Salvar memoria apenas quando for reutilizavel.
 

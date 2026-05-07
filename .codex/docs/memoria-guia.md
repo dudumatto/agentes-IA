@@ -1,27 +1,26 @@
-# memoria-guia (Obsidian)
+# memoria-guia
 
-Objetivo: reduzir tokens mantendo contexto persistente e reutilizável.
+Objetivo: reduzir tokens mantendo contexto persistente e reutilizavel.
 
 ## Estrutura recomendada (vault)
 
 `02-projects/<projeto>/`
 - `README.md`
 - `PROJECT_CONTEXT.md`
-- `MEMORY.md` (índice; links curtos)
-- `LEARNINGS.md` (curado; evitar histórico infinito)
+- `MEMORY.md` (indice; links curtos)
+- `LEARNINGS.md` (curado; evitar historico infinito)
 
-## Uso diário (genérico)
+## Uso diario (generico)
 
-- Carregar contexto do projeto:
-  - `node E:/second-brain/scripts/memory/memory-cli.mjs load --project <projeto>`
-- Salvar memória (curta e reutilizável):
-  - `node E:/second-brain/scripts/memory/memory-cli.mjs save --project <projeto> --text "..." `
-- Aprender (quando houver material novo):
-  - `node E:/second-brain/scripts/memory/memory-cli.mjs learn --project <projeto>`
+- Carregar contexto: `node E:/second-brain/scripts/memory/memory-cli.mjs load --project <projeto>`
+- Salvar memoria: `node E:/second-brain/scripts/memory/memory-cli.mjs save --project <projeto> --text "..."`
+- Aprender: `node E:/second-brain/scripts/memory/memory-cli.mjs learn --project <projeto>`
 
-## Boas práticas
+## Boas praticas
 
-- salvar apenas: decisões, bugs+fix, padrões, workflows.
-- evitar: logs, dumps e conversa inteira.
-- preferir “resumo + links” ao invés de texto longo.
+- salvar apenas decisoes, bugs+fix, padroes e workflows.
+- evitar logs, dumps e conversa inteira.
+- preferir resumo + links.
+- usar `.codex/memory/compression-policy.md` para memoria antiga.
+- usar `.codex/memory/semantic-indexes.md` para retrieval.
 
