@@ -1,6 +1,9 @@
 # SKILLS (índice)
 
-Fonte canônica (domínios + módulos pequenos): `.codex/skills/`.
+Fonte canônica:
+- `.codex/SKILLS.md`
+- `.codex/skills/`
 
-Legado (Agent Kit): `agentsCodex/SKILLS.md` e `agentsCodex/skills/`.
-
+Legado (Agent Kit):
+- `agentsCodex/SKILLS.md`
+- `agentsCodex/skills/`

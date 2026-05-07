@@ -1,12 +1,9 @@
 # AGENTS.md (global — IA)
 
-Este repositório contém um **sistema de contexto modular** em `.codex/`.
-
-## Fonte canônica
-- `.codex/agents/` (agentes leves)
-- `.codex/skills/` (skills sob demanda)
-- `.codex/rules/` (regras curtas)
-- `.codex/workflows/` (workflows paralelos)
+Fonte canônica (use estes índices):
+- `.codex/AGENTS.md`
+- `.codex/RULES.md`
+- `.codex/SKILLS.md`
 
 ## Compatibilidade
 Kits legados preservados:
@@ -16,4 +13,3 @@ Kits legados preservados:
 - `contextTCC/` (contexto de projeto de exemplo)
 
 Regra de ouro: carregar **o mínimo** (agents/skills/rules) necessário para a tarefa.
-

@@ -1,6 +1,9 @@
 # RULES (índice)
 
-Fonte canônica (curta e modular): `.codex/rules/`.
+Fonte canônica:
+- `.codex/RULES.md`
+- `.codex/rules/`
 
-Legado (Agent Kit): `agentsCodex/RULES.md` e `agentsCodex/rules/`.
-
+Legado (Agent Kit):
+- `agentsCodex/RULES.md`
+- `agentsCodex/rules/`

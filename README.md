@@ -41,9 +41,8 @@ Backend/Security/QA/Docs só acionam design quando houver impacto visual/UX.
 
 ## Leitura rápida (recomendado)
 
-- Routing + paralelismo: `.codex/agents/_ROUTING.md`
+- Routing + paralelismo: `.codex/docs/context-engineering.md`
 - Rules curtas: `.codex/rules/`
 - Skills sob demanda: `.codex/skills/`
 - Workflows: `.codex/workflows/`
 - Kit legado (se precisar): `agentsCodex/README.md`
-
