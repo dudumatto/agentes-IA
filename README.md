@@ -1,21 +1,20 @@
-﻿# gitagents — agentes, skills e rules (com Design/UI forte)
+# gitagents — sistema modular de contexto (Codex-first)
 
-Este repositório organiza **agentes personalizados**, **skills reutilizáveis** e **rules** de coordenação para simular um fluxo com especialistas — incluindo um fluxo de Design/UI estilo “Claude Design”.
+Este repositório organiza uma arquitetura de contexto **modular**, **escalável** e **token-efficient** para IA (Codex), com agentes especializados, skills sob demanda, rules curtas e workflows paralelos.
 
 ## Estrutura
 
-- `agentsCodex/` — Agent Kit genérico (agentes + skills + rules)
-  - Entrada: `agentsCodex/README.md`
-  - Índices: `agentsCodex/AGENTS.md`, `agentsCodex/SKILLS.md`, `agentsCodex/RULES.md`
-- `agentsClaude/` — conjunto de agentes no formato do Claude
-  - Entrada: `agentsClaude/README.md`
-- `agentsGemini/` — conjunto de agentes no formato do Gemini
-- `contextTCC/` — contexto de projeto (não é agente/skill/rule)
+- **Canônico (recomendado):** `.codex/` (agents/skills/rules/workflows/templates/automations)
+- **Kits legados (preservados):**
+  - `agentsCodex/` — Agent Kit genérico (agentes + skills + rules)
+  - `agentsClaude/` — conjunto de agentes no formato do Claude
+  - `agentsGemini/` — conjunto de agentes no formato do Gemini
+- **Exemplo de contexto de projeto:** `contextTCC/` (não é agente/skill/rule)
 
-## Quando usar cada agente
+## Quando usar cada agente (conceito)
 
 - **Maestro/Orquestrador**: decompõe, delega e consolida.
-- **Design UI (Claude Design-like)**: revisa UI/UX (layout, responsividade, tipografia, cores, spacing, a11y, motion) e define checklist.
+- **Design UI (Claude Design-like)**: revisa UI/UX e define checklist.
 - **Frontend**: implementa UI e lógica de cliente.
 - **Backend**: implementa API/regras de negócio e contratos.
 - **Integration**: garante compatibilidade front/back e config de ambiente.
@@ -37,11 +36,14 @@ Backend/Security/QA/Docs só acionam design quando houver impacto visual/UX.
 ## Como combinar agents + skills + rules
 
 - **Agents**: quem analisa e decide (responsabilidades + checklists).
-- **Skills**: como executar bem (design system, a11y, responsividade, motion, performance).
+- **Skills**: como executar bem (sob demanda).
 - **Rules**: como coordenar, consolidar e validar.
 
 ## Leitura rápida (recomendado)
 
-- Coordenação: `agentsCodex/rules/COLLABORATION.md`
-- Formato de entrega: `agentsCodex/rules/OUTPUT_FORMAT.md`
-- Kit completo: `agentsCodex/README.md`
+- Routing + paralelismo: `.codex/agents/_ROUTING.md`
+- Rules curtas: `.codex/rules/`
+- Skills sob demanda: `.codex/skills/`
+- Workflows: `.codex/workflows/`
+- Kit legado (se precisar): `agentsCodex/README.md`
+
